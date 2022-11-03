@@ -1,7 +1,5 @@
 package com.dff.cordova.plugin.common.service;
 
-import android.os.Build;
-import androidx.annotation.RequiresApi;
 import android.util.Log;
 import com.dff.cordova.plugin.common.CommonPlugin;
 import com.dff.cordova.plugin.common.action.CordovaAction;
@@ -57,7 +55,6 @@ public abstract class CommonServicePlugin extends CommonPlugin {
      * @param callbackContext The callback context used when calling back into JavaScript.
      * @return Whether the action was valid.
      */
-    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @Override
     public boolean execute(String action, final JSONArray args, final CallbackContext callbackContext)
         throws JSONException {
